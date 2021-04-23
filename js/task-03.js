@@ -25,6 +25,5 @@ images.forEach(image => {
   </li>`
   addList.push(element);
 })
-console.log(addList)
 
 list.insertAdjacentHTML("afterbegin", addList.join(''))

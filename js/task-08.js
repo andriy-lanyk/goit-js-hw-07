@@ -8,20 +8,19 @@ const stepDivSize = 10;
 
 
 buttonCreate.addEventListener('click', createBoxes);
-console.log(buttonCreate)
 buttonClear.addEventListener('click', destroyBoxes)
 
 function createBoxes(amount) {
     amount = input.value;
 
     const arrayOfNewDivs = [];
+
     for (let i = 1; i <= amount; i += 1) {
         const newDiv = `<div style="background-color: rgb(${randomRgbColor()}, ${randomRgbColor()}, ${randomRgbColor()}); width: ${divSize + (i - 1) * 10}px; height: ${divSize + (i - 1) * 10}px;"></div>`;
     arrayOfNewDivs.push(newDiv);
     }
     
     boxContainer.insertAdjacentHTML("afterbegin", arrayOfNewDivs.join(''));
-    
 }
 
 function destroyBoxes() {

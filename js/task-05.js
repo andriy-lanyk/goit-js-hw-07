@@ -8,7 +8,5 @@ function changeGreetName(event) {
     if (event.currentTarget.value !== "") {
     greetName.textContent = event.currentTarget.value
     }
-
-    console.log(event)
 }
 

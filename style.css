@@ -42,3 +42,11 @@ li {
 #validation-input.invalid {
   border-color: #f44336;
 }
+
+/* TASK 8 */
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 15px;
+}
