@@ -17,10 +17,14 @@ const images = [
 ];
 
 const list = document.querySelector('#gallery');
+const addList = [];
 
-const element = document.createElement('li');
-const photo = document.createElement('img');
+images.forEach(image => {
+  const element = `<li class="gallery_element">
+  <img class="gallery_photo" src=${image.url} alt=${image.alt}>
+  </li>`
+  addList.push(element);
+})
+console.log(addList)
 
-images.forEach
-
-image.setAttribute("url", )
+list.insertAdjacentHTML("afterbegin", addList.join(''))
